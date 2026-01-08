@@ -1,0 +1,125 @@
+/* Page and header */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+  background: #0b0b0b;
+  color: #e5e7eb;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 12px 6px;
+  background: linear-gradient(180deg, rgba(57,255,20,0.08), rgba(0,0,0,0));
+}
+
+.logo {
+  width: clamp(220px, 55vw, 380px);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 12px rgba(57,255,20,0.55));
+}
+
+#scanner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+/* Camera */
+#reader {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #39FF14;
+  border-radius: 12px;
+  background: #000;
+  box-shadow: 0 4px 22px rgba(57,255,20,0.12);
+}
+
+#reader video,
+#reader__scan_region video {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) rotate(0deg) !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 10px;
+  background: #111827;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+button:hover { background: #1f2937; }
+button:disabled { opacity: 0.6; cursor: default; }
+
+#confirmBtn {
+  background: #16a34a;
+}
+#confirmBtn:hover { background: #15803d; }
+
+/* Status */
+.status {
+  margin-top: 6px;
+  font-size: 14px;
+  text-align: center;
+  color: #9ca3af;
+}
+.ok  { color: #39FF14 !important; }
+.bad { color: #f43f5e !important; }
+
+/* Info row */
+.info-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.info-block {
+  background: #0e0e0e;
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.info-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.info-value {
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e5e7eb;
+}
+
+@media (max-width: 380px) {
+  button { font-size: 15px; padding: 9px 14px; }
+  .info-row { grid-template-columns: 1fr; }
+}

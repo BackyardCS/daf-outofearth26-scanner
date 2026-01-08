@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Event Scanner</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- QR scanner library -->
+  <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+  <header class="topbar">
+    <picture>
+      <source srcset="images/logo.svg" type="image/svg+xml" />
+      <img
+        class="logo"
+        src="images/logo@1x.png"
+        srcset="images/logo@2x.png 2x, images/logo@3x.png 3x"
+        sizes="(min-width: 680px) 380px, 55vw"
+        alt="Event Logo" />
+    </picture>
+  </header>
+
+  <main id="scanner-container">
+    <!-- Camera box -->
+    <div id="reader" aria-label="QR camera view"></div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="scanBtn" type="button">Scan</button>
+      <button id="confirmBtn" type="button" title="Confirm check-in" disabled>✔</button>
+    </div>
+
+    <!-- Status (persists) -->
+    <div id="status" class="status" aria-live="polite">Ready</div>
+
+    <!-- Always-visible details -->
+    <div class="info-row">
+      <div class="info-block">
+        <div class="info-label">Guest</div>
+        <div id="attendee" class="info-value">—</div>
+      </div>
+      <div class="info-block">
+        <div class="info-label">Guests with them</div>
+        <div id="companions" class="info-value">0</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- App logic -->
+  <script src="script.js"></script>
+</body>
+</html>
