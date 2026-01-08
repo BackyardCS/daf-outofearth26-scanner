@@ -102,7 +102,7 @@ This app uses the device camera to scan QR codes from attendee tickets and updat
 
 ## 👩‍💻 Maintainers
 
-Built for **DAF Continuum 2025** check-in operations.  
+Built for **DAF Of The Earth 2026** check-in operations.  
 Maintained by the event tech team.
 =======
 # daf-outofearth26-scanner
