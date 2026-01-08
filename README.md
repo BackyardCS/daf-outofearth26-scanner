@@ -106,4 +106,3 @@ Built for **DAF Of The Earth 2026** check-in operations.
 Maintained by the event tech team.
 =======
 # daf-outofearth26-scanner
->>>>>>> e9804c7107ecdabfee4ffc3c707ba6a5edfea3d8
