@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📱 QR Scanner Web App
 
 A lightweight **web-based check-in tool** for events.  
