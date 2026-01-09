@@ -1,7 +1,7 @@
 /* ========================
    Configuration
 ======================== */
-const ENDPOINT = "https://script.google.com/macros/s/AKfycbwa_AgSMP8dhjGMGG1tFJPrewqnwDwb_4OIfJaOOscnUiaL1w8WweTp0WavJZpy2CwW/exec";
+const ENDPOINT = "https://script.google.com/macros/s/AKfycbyNG4wlSM_xeM5K9hXVimBvqTbQCXKyNJG5BFS3BiFRq0PhU1VL6tyBiHmFzqkiu0su/exec";
 
 // guests field config
 const GUESTS_FIELD_IS_ADDITIONAL = false;
